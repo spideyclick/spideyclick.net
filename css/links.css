@@ -1,0 +1,40 @@
+/* <style media="screen"> */
+.articleContainer > h2 {
+	margin:25px 0 10px 0;
+}
+.linkCardGroup {
+	display: flex;
+	flex-wrap:wrap;
+	width:100%;
+	align-items:start;
+	justify-content: start;
+}
+.linkCardGroup a {
+	flex: 0 1 auto;
+	display: flex;
+	text-align:center;
+	margin:0 15px 15px 0;
+	border-radius:5px;
+	background: #2bcea8;
+	padding-bottom:4px;
+	transition:0.2s ease-out;
+}
+.linkCardGroup a:hover {
+	/* padding-bottom:8px;
+	transform:translateY(-4px); */
+	padding-bottom:0;
+	transform:translateY(4px);
+	margin-bottom:19px;
+	transition:0.05s ease-out;
+}
+.linkCardInner {
+	background:#f1f1f1;
+	padding:15px;
+	border-radius:5px;
+}
+.linkCardInner small {
+	display: block;
+	margin: 0 0 -10px 0;
+	color: #0006;
+	font-size: 0.6em;
+}
