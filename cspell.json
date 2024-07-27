@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["en_US", "companies", "softwareTerms"],
+  "words": ["spideyclick", "hubbell", "sportster"],
+  "languageSettings": [
+    {
+      "languageId": "markdown",
+      "ignoreRegExpList": ["/^\\s*```[\\s\\S]*?^\\s*```/gm", "/`\\S+`/gm"]
+    }
+  ],
+  "ignoreRegExpList": ["/\\W[A-Z]+\\W/"],
+  "enableCompoundWords": true,
+  "flagWords": []
+}

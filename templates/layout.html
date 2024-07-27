@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>spideyclick.net</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2BCEA8">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4793ef439d.js"></script>
+  <link rel=stylesheet type=text/css href="style.css">
+</head>
+
+<body>
+  <div class="fullWidthContainer mainContent">
+    <div id="pageHeader">
+      <a href="https://spideyclick.net"><p>{{ page_title }}</p></a>
+    </div>
+    <div id="navContainer">
+      <a class="navMainLink" href="/"><div class="navMain">About Me</div></a>
+      <a class="navMainLink" href="/projects"><div class="navMain">Projects</div></a>
+      <a class="navMainLink" href="/notes"><div class="navMain">Notes</div></a>
+      <a class="navMainLink" href="/links"><div class="navMain">Links</div></a>
+    </div>
+    <div id="contextNavContainer">
+      <div id="mugContainer" class="contextNav" style="background: none;padding:0;"><img src="{{url_for('static', filename='zacharyProfile.jpg')}}" alt="Zach's Mug" style="max-width:100px;padding:15px;border-radius:100px;overflow:hidden;"><img src="{{url_for('static', filename='spideyclick.png')}}" alt="spideyclick logo" style="max-width:100px;padding:15px;border-radius:100px;overflow:hidden;"></div>
+      <a class="contextNavLink" href="https://github.com/spideyclick" target="_blank"><div class="contextNav" style="background: #24292E;"><p>GitHub</p><i class="fab fa-github"></i></div></a>
+      <a class="contextNavLink" href="https://gitlab.com/spideyclick" target="_blank"><div class="contextNav" style="background: #6B4FBB;"><p>GitLab</p><i class="fab fa-gitlab" style="color: #f07708"></i></div></a>
+      <a class="contextNavLink" href="https://linkedin.com/in/zachary-hubbell-b21339b7/" target="_blank"><div class="contextNav" style="background: #355773;"><p>Linkedin</p><i class="fab fa-linkedin"></i></div></a>
+      <a class="contextNavLink" href="https://www.instagram.com/spideyclick/" target="_blank"><div class="contextNav" style="background:#d6249f;background: radial-gradient(circle at 40% 150%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"><p>Instagram</p><i class="fab fa-instagram"></i></div></a>
+      <a class="contextNavLink" href="https://www.youtube.com/c/zacharyhubbellcodes" target="_blank"><div class="contextNav" style="background: #F00;"><p>Youtube</p><i class="fab fa-youtube"></i></div></a>
+      <a class="contextNavLink" href="https://soundcloud.com/spideyclick/tracks" target="_blank"><div class="contextNav" style="background: #F70;"><p>SoundCloud</p><i class="fab fa-soundcloud"></i></div></a>
+      <a class="contextNavLink" href="mailto:spideyclick+web@gmail.com"><div class="contextNav" style="background: #2BCEA8;"><p>Email</p><i class="fas fa-envelope"></i></div></a>
+    </div>
+    <div id="blockContainer" class="fullWidthContainer">
+      <div class="articleContainer">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

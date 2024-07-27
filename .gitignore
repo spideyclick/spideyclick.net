@@ -1,0 +1,10 @@
+dist/**
+*.ftpconfig
+config.ini
+scripts/tmp.py
+__pycache__
+.vscode/settings.json
+.vscode/sftp.json
+
+# Keep below all others
+!.gitkeep
