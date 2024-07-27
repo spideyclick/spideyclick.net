@@ -16,18 +16,9 @@ insert_into_template() {
 
 	awk -v title="$title" -v content="$content" '
 
-	BEGIN {
-		# Read the content into an array
-		split(content, lines, "\n")
-		# Prepare the content for substitution
-		content_sub = ""
-		for (i in lines) {
-		content_sub = content_sub lines[i] "\n"
-		}
-	}
 	{
 		gsub(/\{\{ page_title \}\}/, title)
-		gsub(/\{\{ content \}\}/, content_sub)
+		gsub(/\{\{ content \}\}/, content)
 		print
 	}
 
