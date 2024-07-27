@@ -55,8 +55,9 @@ footer img {
 	overflow:hidden;
 }
 article {
-  font-family: roboto, sans-serif;
-  font-weight: 300;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-optical-sizing: auto;
 }
 article a {
 	border-bottom: 4px solid var(--theme-main);
