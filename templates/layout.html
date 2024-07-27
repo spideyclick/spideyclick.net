@@ -5,46 +5,40 @@
 	<title>spideyclick.net</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#2BCEA8">
+	<meta name="theme-color" content="#abff07">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/4793ef439d.js"></script>
-	<link rel=stylesheet type=text/css href="css/style.css">
+	<link rel=stylesheet type=text/css href="css/reset.css">
 	<link rel=stylesheet type=text/css href="css/theme.css">
+	<link rel=stylesheet type=text/css href="css/layout.css">
+	<link rel=stylesheet type=text/css href="css/style.css">
 </head>
 
 <body>
-	<div class="fullWidthContainer mainContent">
-		<div id="pageHeader">
-			<a href="https://spideyclick.net"><p>{{ page_title }}</p></a>
-		</div>
-		<div id="navContainer">
-			<a class="navMainLink" href="/"><div class="navMain">About Me</div></a>
-			<a class="navMainLink" href="/projects"><div class="navMain">Projects</div></a>
-			<a class="navMainLink" href="/links"><div class="navMain">Links</div></a>
-			<a class="navMainLink" href="/notes"><div class="navMain">Notes</div></a>
-		</div>
-		<div id="contextNavContainer">
-			<div id="mugContainer" class="contextNav" style="background: none;padding:0;"><img src="img/zacharyProfile.jpg" alt="Zach's Mug" style="max-width:100px;padding:15px;border-radius:100px;overflow:hidden;"><img src="img/spideyclick.png" alt="spideyclick logo" style="max-width:100px;padding:15px;border-radius:100px;overflow:hidden;"></div>
-			<a class="contextNavLink" href="https://github.com/spideyclick" target="_blank"><div class="contextNav" style="background: #24292E;"><p>GitHub</p><i class="fab fa-github"></i></div></a>
-			<a class="contextNavLink" href="https://linkedin.com/in/zachary-hubbell-b21339b7/" target="_blank"><div class="contextNav" style="background: #355773;"><p>Linkedin</p><i class="fab fa-linkedin"></i></div></a>
-			<a class="contextNavLink" href="https://stackoverflow.com/users/2887850/" target="_blank"><div class="contextNav" style="background: #e7700d;"><p>StackOverflow</p><i class="fab fa-stack-overflow"></i></div></a>
-			
-			<a class="contextNavLink" href="mailto:spideyclick+web@gmail.com"><div class="contextNav" style="background: #2BCEA8;"><p>Email</p><i class="fas fa-envelope"></i></div></a>
-		</div>
-		<div id="blockContainer" class="fullWidthContainer">
-			<div class="articleContainer">
-
+	<nav>
+		<a href="/">About Me</a>
+		<a href="/projects">Projects</a>
+		<a href="/links">Links</a>
+		<a href="/notes">Notes</a>
+	</nav>
+	<article>
 <!-- Output of pandoc goes here -->
-
 {{ content }}
-
 <!-- End of pandoc output -->
-
-			</div>
+	</article>
+	<footer>
+		<div>
+			<img src="img/zacharyProfile.jpg" alt="Zach's Mug">
+			<img src="img/spideyclick.png" alt="spideyclick logo">
 		</div>
-	</div>
+		<a href="https://github.com/spideyclick" style="background: #24292E;">GitHub<i class="fab fa-github"></i></a>
+		<a href="https://linkedin.com/in/zachary-hubbell-b21339b7/" style="background: #355773;">Linkedin<i class="fab fa-linkedin"></i></a>
+		<a href="https://stackoverflow.com/users/2887850/" style="background: #e7700d;">StackOverflow<i class="fab fa-stack-overflow"></i></a>
+		<a href="mailto:spideyclick+web@gmail.com" style="background: #623953;">Email<i class="fas fa-envelope"></i></a>
+	</footer>
 </body>
 
 </html>
