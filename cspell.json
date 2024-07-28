@@ -2,7 +2,7 @@
   "version": "0.2",
   "language": "en",
   "dictionaries": ["en_US", "companies", "softwareTerms"],
-  "words": ["spideyclick", "hubbell", "sportster"],
+  "words": ["spideyclick", "hubbell", "sportster", "hackathons"],
   "languageSettings": [
     {
       "languageId": "markdown",

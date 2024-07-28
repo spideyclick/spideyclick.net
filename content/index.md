@@ -6,17 +6,11 @@ I started with basic HTML and CSS when I was 11 and have enjoyed my time learnin
 
 Through the years I've gotten to work on all kinds of projects: backup scripts, static sites, responsive web-apps, backend systems, libraries we use every day at work, ETL Pipelines, lots of little game prototypes and more. See the [Projects](/projects) page to find what I've already worked on.
 
-![Pueblo Maker Club](img/maker-club-1.jpg)
+I enjoy getting to meet people with similar interests; I've had the opportunity to attend some hackathons and meetups over the years.
 
-> Spending some time at the Pueblo Maker Club in the early 2010's
+![Code For The Kingdom (C4TK) 2016 winners](img/c4tk-hackathon-2016.jpg)
 
-![3D printer](img/maker-club-2.jpeg)
-
-> These guys built a 3D printer from scratch and showed me how it works!
-
-![C4TK 2016](img/c4tk-hackathon-2016.jpg)
-
-> C4TK 2016 winners - I worked on the GlassHalf project.
+![Pueblo Maker Club](img/maker-club.jpg)
 
 ## Technologies I Love
 
