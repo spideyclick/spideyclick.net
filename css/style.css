@@ -52,7 +52,7 @@ footer img {
 }
 article {
 	font-family: "Poppins", serif;
-	font-weight: 200;
+	font-weight: var(--default-font-weight);
 	font-optical-sizing: auto;
 }
 article a {
