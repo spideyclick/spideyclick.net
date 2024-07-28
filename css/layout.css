@@ -1,21 +1,28 @@
 body {
 	display: grid;
+	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 150px minmax(300px, 35rem) 300px 1fr;
 }
 nav {
+	grid-row: 1;
 	grid-column: 2;
-	margin-top: 4rem;
+	margin-top: 3.5rem;
 	text-wrap: nowrap;
 }
+nav > a {
+	display: block;
+	margin: 1rem;
+}
 article {
+	grid-row: 1;
 	grid-column: 3;
-	padding: 0 15px 5px 5px;
+	max-width: 35rem;
 }
 footer {
+	grid-row: 1;
 	grid-column: 4;
 	text-align: right;
 	justify-self: center;
-	z-index: 1;
 }
 footer > div {
 	justify-content: space-around;
@@ -33,27 +40,28 @@ footer > a {
 		grid-template-columns: auto 300px;
 	}
 	nav {
-		display: flex;
 		grid-column: 1;
-		margin: 3rem 0 -91px 1rem;
+		margin: 3rem 0 -3rem auto;
+		padding: 1rem;
 		z-index: 1;
-		padding: 0;
+		width: min(34rem, calc(100% - 2rem));
+		height: min-content;
+		display: flex;
+		gap: 1rem;
 	}
 	nav > a {
-		display: inline-block;
-		padding: 10px 0;
-		margin: 0 10px 0 0;
-		cursor: pointer;
+		height: min-content;
+		margin: 0;
 	}
 	article {
 		grid-column: 1;
-		padding-left: 0;
-		margin-left: 1rem;
+		margin: 0 0 0 auto;
+		padding-left: 1rem;
 	}
 	article > h1 {
 		grid-row: 1;
 		grid-column: 1;
-		margin-bottom: 42px;
+		margin-bottom: 3rem;
 	}
 	footer {
 		grid-column: 2;
@@ -61,17 +69,22 @@ footer > a {
 }
 @media only screen and (max-width: 767px) {
 	body {
+		grid-template-rows: 1fr min-content;
 		grid-template-columns: auto;
 	}
-	article {
-		padding-right: 0;
-		margin-right: 1rem;
+	#page_bottom_indicator {
+		display: none;
 	}
-	nav > div {
-		margin: 0;
-		padding: 10px 0;
+	article {
+		margin: 0 auto;
+		padding-right: 1rem;
+	}
+	nav {
+		width: min(35rem, calc(100% - 2rem));
+		margin: 3rem auto -3rem auto;
 	}
 	footer {
+		grid-row: 2;
 		grid-column: 1;
 		margin: 0;
 		padding: 0;
