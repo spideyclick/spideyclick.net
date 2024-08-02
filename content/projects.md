@@ -2,23 +2,13 @@
 
 ## TechAssist
 
-[](https://youtu.be/lA1jKo--nU8)
-![](img/flask.svg)
-![](img/mysql.svg)
+![[TechAssist Demo](https://youtu.be/lA1jKo--nU8)](img/techassist.png)
 
-![atcjet.net](img/techassist.png)
+Between 2016-2020 I worked phone support for ATC Communications, a rural telecommunications company. Over the course of that time I developed a webapp to help myself (and the other members of the support team) help customers faster.
 
-This program is all about automation and communication between systems. It has several functions, my favorite being the customer lookup that pulls data from 8 different servers as needed, combining relevant data into a super-helpful dashboard.
+This program was all about automation and communication between systems. It had several functions, my favorite being the customer lookup that pulls data from 8 different systems, combining relevant data into a super-helpful dashboard. It also had a database of our equipment, ran batch jobs to apply billing changes to our equipment and monitored our network for for poor connections.
 
-It also has a database of our current equipment, regularly exports a list of our entire customer base to another system tool and watches for poor connections on our network.
-
-TechAssist is a tool I started working on during my first week on the job at ATC Communications. Immediately after I started working there, I started seeing repetitive processes that could be sped up with some scripting.
-
-That got me started working on a Python + QT program that ran in the background on my PC. But problems came up when others started to need the functionality I had with this program. Deployment became a major headache, with some computers needing specific versions of PyQT, having to update each PC manually, etc.
-
-So, despite my love for QT, I recognized it was not the best tool for the job and I changed my process. I'd heard about DJango, did some research, and decided Flask was the best fit. I created a virtual server, spun up CentOS 7, I installed Flask and all my libraries on that one machine, and now everybody can access TechAssist through their browser, no installations required!
-
-[](https://web.archive.org/web/20200501012002/https://atcjet.net/)
+I used Flask for the backend and, rather than picking a frontend framework, coded raw HTML, CSS & JS (with some limited help from Jinja templates). Doing things this way really helped me understand web technologies better and I've found myself avoiding frontend frameworks in general due to how much can be done with contemporary CSS & JS features.
 
 [](img/ChaseBox.html)
 
@@ -42,16 +32,6 @@ My biggest issue with this is that the physics are framerate-dependant. However,
 
 I am also working on a 3D First Person environment
 [here](img/3D.html)
-
-## Qcheck
-
-Qcheck is a Python/Bash script that analyzes logs from our [Communigate Pro Email Server](https://www.communigate.com/) and identifies if an account is hacked using IP geolocation data and analysis of recently sent messages.
-
-Basically, it says: "If you are not from America and you have sent more than 10 messages in a short period of time, you are a hacker and you don't get to log in anymore and I'm emailing everybody in Tech Support to investigate."
-
-This was created to help maintain a system that we wanted to replace years ago. While it's not the best solution, it immediately started to help the problems we were having with brute-force password hacks on accounts with terrible passwords.
-
-The real lesson to be learned here is: don't use a password less than 8 characters, especially if it's just numbers. Please, just don't.
 
 [](https://gitlab.com/spideyclick/tabletop-rpg-creator/)
 
