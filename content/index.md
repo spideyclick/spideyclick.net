@@ -1,3 +1,53 @@
+<style>
+:root {
+	--badge-top: var(--theme-main);
+	--badge-bottom: var(--background-up-2);
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--badge-top: var(--background-up-2);
+		--badge-bottom: var(--theme-main);
+	}
+}
+.logo_badges ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 0;
+	justify-content: space-evenly;
+}
+.logo_badges li {
+	background: linear-gradient(
+		180deg,
+		var(--badge-top) 0%,
+		var(--badge-top) 70%,
+		var(--badge-bottom) 70%,
+		var(--badge-bottom) 100%)
+	;
+	border-radius: 50% 50% 50% 50% / 15% 15% 15% 15%;
+	box-shadow: var(--material-shadow);
+	color: var(--badge-top);
+	display: flex;
+	flex-direction: column;
+	font-weight: 400;
+	height: 100px;
+	list-style: none;
+	overflow: hidden;
+	padding: 25px 5px;
+	position: relative;
+	text-align: center;
+	width: 85px;
+}
+.logo_badges i {
+	color: var(--badge-bottom);
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 38px;
+	height: 47px;
+	top: 36px;
+	left: 0;
+}
+</style>
 # spideyclick.net
 
 My name is Zachary Hubbell. I've been writing code since 2012 and have worked full-time in the field since 2020. I'm self-taught and enjoy learning new languages and tools all the time - if my workflow isn't evolving, I'm getting bored.
@@ -14,22 +64,31 @@ I enjoy getting to meet people with similar interests; I've had the opportunity 
 
 ## Technologies I Love
 
+<div class="logo_badges">
+
 These are the blocks I build with:
 
-- Git
-- Docker
-- HTML/CSS (plus a little javascript now and then)
-- Bash
-- Python
-- Rust
-- Postgres/MySQL
+- <i class="fab fa-git-alt" aria-hidden="true"></i>Git
+- <i class="fab fa-markdown" aria-hidden="true"></i>MarkDown
+- <i class="fas fa-terminal" style="font-size:50px;" aria-hidden="true"></i>Bash
+- <i class="fab fa-python" aria-hidden="true"></i>Python
+- <i class="fab fa-rust" aria-hidden="true"></i>Rust
+- <i class="fab fa-html5" aria-hidden="true"></i>HTML
+- <i class="fab fa-css3-alt" aria-hidden="true"></i>CSS
+- <i class="fab fa-js" aria-hidden="true"></i>JavaScript
+- <i class="fab fa-docker" aria-hidden="true"></i>Docker
+- <i class="fa fa-database" aria-hidden="true"></i>Postgres
 
-I've also come to love some core command line tools:
+</div>
 
-- Starship
-- RipGrep
-- FZF
-- jq (& yq)
+I've also come to love some tools that took my terminal to the next level:
+
+- [Starship](https://starship.rs/)
+- [`rg`](https://github.com/BurntSushi/ripgrep) (RipGrep)
+- [`fd`](https://github.com/sharkdp/fd) (Find)
+- [`fzf`](https://github.com/junegunn/fzf) (Fuzzy Finder)
+- [`jq`](https://github.com/jqlang/jq) / [`yq`](https://github.com/mikefarah/yq)
+- [`choose`](https://github.com/theryangeary/choose) (cut alternative)
 
 Stuff I've played with but would not say I'm proficient in:
 
