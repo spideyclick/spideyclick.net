@@ -37,12 +37,15 @@
 	position: relative;
 	text-align: center;
 	width: 85px;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: smaller;
+	font-weight: bold;
 }
 .logo_badges i {
 	color: var(--badge-bottom);
 	font-size: 60px;
 	text-align: center;
-	margin-bottom: 38px;
+	margin-bottom: 43px;
 	height: 47px;
 	top: 36px;
 	left: 0;
