@@ -47,28 +47,21 @@ This was a small proof-of-concept I built using Rust and the [Dioxus](https://di
 	<figcaption aria-hidden="true"><a href="https://text-adventure.spideyclick.net"><code>https://text-adventure.spideyclick.net</code></a></figcaption>
 </figure>
 
-## Character Sheet
-
 <!-- TODO -->
 
-## ChaseBox
+<!-- ## Character Sheet -->
 
-![](img/webgl.svg)
+## WebGL Experiments
 
-![ChaseBox](img/chasebox.png)
+![[ChaseBox](static/ChaseBox.html)](img/chasebox.png)
 
-ChaseBox is a simple 2D game I'm building in an attempt to learn WebGL.
+ChaseBox is a simple 2D game I built in an attempt to learn WebGL. It has super-simple physics, super-simple shaders and super-simple event handlers. It's not much, but it works! It gradually ramps up speed over time, and I remember when I showed it to my co-workers it wasn't long before they were trying to get the best score!
 
-I've written simple physics, shaders and event handlers. It's not much right now, but I love it. Plus my co-workers found it slightly addictive as the speed ramps up over time!
+My biggest issue with this is that the physics are framerate-dependant. However, I could always come back to it and implement a time-delta approach, such as the one explained in [Gaffer On Games | Fix Your Timestep](https://web.archive.org/web/20190403012130/https://gafferongames.com/post/fix_your_timestep/).
 
-My biggest issue with this is that the physics are framerate-dependant. However, I am in progress of implementing the ideas layed out in [Gaffer On Games | Fix Your Timestep!](https://web.archive.org/web/20190403012130/https://gafferongames.com/post/fix_your_timestep/)
+I also took a shot at a a 3D First Person environment [here](static/3D.html).
 
-I am also working on a 3D First Person environment
-[here](img/3D.html)
-
-[](https://gitlab.com/spideyclick/tabletop-rpg-creator/)
-
-## tRPG
+## RPG Tools
 
 ![](img/flask.svg)
 
@@ -81,6 +74,8 @@ While I'm already a fan of [Orcpub 2](https://orcpub2.com/) and [Roll 20](https:
 The idea of objects containing objects with attributes and rules is just absolutely fascinating to me, and I'd love to get to the point where you could just import rules for 5e or any other system just by uploading a JSON file.
 
 For now, it's just a fun project I play around with from time to time.
+
+I've recently started experimenting with creating a Character Sheet using the Dioxus framework, but don't have anything I can show off yet!
 
 [](https://github.com/spideyclick/Lynx-Program-Downloader)
 
