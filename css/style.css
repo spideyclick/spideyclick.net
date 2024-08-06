@@ -1,97 +1,103 @@
 .materialShadow {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .materialShadowHover {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: 0.2s ease-out;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.2s ease-out;
 }
 .materialShadowHover:hover {
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	transition: 0.2s ease-out;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.2s ease-out;
 }
 ::selection {
-	background: #0004;
+  background: #0004;
 }
 h1 {
-	font-family: 'JetBrains Mono', monospace;
-	font-weight:100;
-	color: var(--theme-main);
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 100;
+  color: var(--theme-main);
 }
 code {
-	font-family: 'JetBrains Mono', monospace;
-	font-weight: bolder;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bolder;
 }
 nav > a {
-	font-family: 'JetBrains Mono', monospace;
-	font-weight: 200;
-	border-bottom: 4px solid transparent;
-	font-size: large;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 200;
+  border-bottom: 4px solid transparent;
+  font-size: large;
 }
 nav > a:hover {
-	color: var(--theme-main);
-	border-bottom: 4px solid var(--theme-main);
+  color: var(--theme-main);
+  border-bottom: 4px solid var(--theme-main);
 }
 footer > a {
-	background: #000;
-	color: white;
-	font-family: roboto, sans-serif;
-	font-weight: 300;
-	transition: 0.2s ease-out;
+  background: #000;
+  color: white;
+  font-family: roboto, sans-serif;
+  font-weight: 300;
+  transition: 0.2s ease-out;
 }
 footer > a:hover {
-	padding-left: 30px;
-	padding-right: 30px;
-	transition: 0.2s ease-out;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.2s ease-out;
 }
 footer > div {
-	background: none;
-	padding:0;
-	margin-bottom: -1rem;
+  background: none;
+  padding: 0;
+  margin-bottom: -1rem;
 }
 footer img {
-	max-width:100px;
-	margin: 1rem;
-	border-radius:100px;
-	overflow:hidden;
+  max-width: 100px;
+  margin: 1rem;
+  border-radius: 100px;
+  overflow: hidden;
 }
 article {
-	font-family: "Poppins", serif;
-	font-weight: var(--default-font-weight);
-	font-optical-sizing: auto;
+  font-family: "Poppins", serif;
+  font-weight: var(--default-font-weight);
+  font-optical-sizing: auto;
 }
 article a {
-	border-bottom: 4px solid var(--theme-main);
+  border-bottom: 4px solid var(--theme-main);
 }
 article a:hover {
-	color: var(--theme-main);
-	background: var(--background-down-1);
+  color: var(--theme-main);
+  background: var(--background-down-1);
 }
 figure {
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: var(--material-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--material-shadow);
 }
-figure img {
-	max-width: 100%;
-	display: block;
+article img {
+  max-width: 100%;
+  display: block;
 }
 figcaption {
-	text-align: center;
-	background: var(--background-up-1);
-	padding: 0.5rem;
+  text-align: center;
+  background: var(--background-up-1);
+  padding: 0.5rem;
 }
 blockquote {
-	margin: 0;
-	background: var(--background-down-1);
-	border-radius: 5px;
-	border-left: 4px solid var(--theme-main);
-	padding: 0 1rem 0 2rem;
-	overflow: hidden;
+  margin: 0;
+  background: var(--background-down-1);
+  border-radius: 5px;
+  border-left: 4px solid var(--theme-main);
+  padding: 0 1rem 0 2rem;
+  overflow: hidden;
 }
 #page_bottom_indicator {
-	content: "";
-	box-shadow: 0 0 20px 6px rgb(0 0 0 / 90%);
-	grid-column: 1 / -1;
-	width: 100%;
-	height: 0px;
+  content: "";
+  box-shadow: 0 0 20px 6px rgb(0 0 0 / 90%);
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 0px;
 }

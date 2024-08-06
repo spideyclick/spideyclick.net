@@ -1,3 +1,20 @@
+<style>
+@media only screen and (min-width: 768px) {
+	figure[tabindex="0"] img {
+		cursor: pointer;
+	}
+	figure[tabindex="0"]:focus {
+		overflow: visible;
+	}
+	figure[tabindex="0"]:focus img {
+		max-width: 90vw;
+		max-height: 90vh;
+		position: fixed;
+		left: 5vw;
+		top: 5vh;
+	}
+}
+</style>
 # Projects
 
 ## TechAssist
@@ -16,7 +33,19 @@ I used Flask for the backend and, rather than picking a frontend framework, code
 
 <!-- TODO -->
 
-<text-adventure.spideyclick.net>
+
+
+<figure tabindex=0>
+	<picture>
+	  <!-- User prefers light mode: -->
+	  <source srcset="img/text-adventure-light.png" media="(prefers-color-scheme: light)"/>
+	  <!-- User prefers dark mode: -->
+	  <source srcset="img/text-adventure-dark.png"  media="(prefers-color-scheme: dark)"/>
+	  <!-- User has no color preference: -->
+	  <img src="light.png"/>
+	</picture>
+	<figcaption aria-hidden="true"><a href="https://text-adventure.spideyclick.net"><code>https://text-adventure.spideyclick.net</code></a></figcaption>
+</figure>
 
 ## ChaseBox
 
