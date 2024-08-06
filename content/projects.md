@@ -31,9 +31,9 @@ I used Flask for the backend and, rather than picking a frontend framework, code
 
 ## Text Adventure
 
-<!-- TODO -->
+This was a small proof-of-concept I built using Rust and the [Dioxus](https://dioxuslabs.com/) framework. It was my first real foray into writing rust and I was able to get it [mentioned on Dioxus' website](https://dioxuslabs.com/awesome)!
 
-
+[Source Code](https://github.com/spideyclick/dioxus-text-adventure)
 
 <figure tabindex=0>
 	<picture>
@@ -46,6 +46,10 @@ I used Flask for the backend and, rather than picking a frontend framework, code
 	</picture>
 	<figcaption aria-hidden="true"><a href="https://text-adventure.spideyclick.net"><code>https://text-adventure.spideyclick.net</code></a></figcaption>
 </figure>
+
+## Character Sheet
+
+<!-- TODO -->
 
 ## ChaseBox
 
