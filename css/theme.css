@@ -1,48 +1,51 @@
 /* Light Theme */
 :root {
-	--theme-main: #80689e;
-	--theme-main-transparent: #80689e40;
-	--text: #444;
-	--text-alt: #fff;
-	--text-muted: #888;
-	--default-font-weight: 300;
-	--background-down-1: #fff;
-	--background: #f1f5f9;
-	--background-up-1: #cbc1d7;
-	--background-up-2: #fff;
+  --theme-main: #80689e;
+  --theme-main-transparent: #80689e40;
+  --text: #444;
+  --text-alt: #fff;
+  --text-muted: #888;
+  --default-font-weight: 300;
+  --background-down-1: #fff;
+  --background: #f1f5f9;
+  --background-up-1: #cbc1d7;
+  --background-up-2: #fff;
+  --selection-background: #0004;
 }
 
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
-	:root {
-		/* Remember to update theme-color meta attribute in template! */
-		--theme-main: #abff07;
-		--theme-main-transparent: #abff0740;
-		--text: #e5e9f0;
-		--text-alt: #303446;
-		--text-muted: #888;
-		--default-font-weight: 200;
-		--background-down-1: #151928;
-		--background: #1d2135;
-		--background-up-1: #242942;
-		--background-up-2: #313859;
-	}
+  :root {
+    /* Remember to update theme-color meta attribute in template! */
+    --theme-main: #abff07;
+    --theme-main-transparent: #abff0740;
+    --text: #e5e9f0;
+    --text-alt: #303446;
+    --text-muted: #888;
+    --default-font-weight: 200;
+    --background-down-1: #151928;
+    --background: #1d2135;
+    --background-up-1: #242942;
+    --background-up-2: #313859;
+    --selection-background: #fff4;
+  }
 }
 
 :root {
-	--material-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	--red: #b65c72;
-	--red-transparent: #b65c7240;
-	--orange: #dda654;
-	--orange-transparent: #dda65440;
-	--green: #6dad54;
-	--green-transparent: #6dad5440;
-	--blue: #497ab3;
-	--blue-transparent: #497ab340;
-	--purple: #5c49b3;
-	--purple-transparent: #5c49b340;
+  --material-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  --red: #b65c72;
+  --red-transparent: #b65c7240;
+  --orange: #dda654;
+  --orange-transparent: #dda65440;
+  --green: #6dad54;
+  --green-transparent: #6dad5440;
+  --blue: #497ab3;
+  --blue-transparent: #497ab340;
+  --purple: #5c49b3;
+  --purple-transparent: #5c49b340;
 }
 
 .theme-main {
-	color: var(--theme-main);
+  color: var(--theme-main);
 }
