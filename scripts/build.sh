@@ -25,11 +25,12 @@ insert_into_template() {
 	' "$template_file" > "$output_file"
 }
 
-for markdown_file in $content_dir/*.md; do
+for markdown_file in "$content_dir"/*.md; do
 	filename=$(basename -- "$markdown_file")
 	filename="${filename%.*}"
 
-	html_content=$(pandoc $markdown_file)
+	html_content=$(pandoc "$markdown_file" | sed 's/&amp;/\\\\&/')
+	echo "$html_content"
 	output_file="$output_dir/$filename.html"
 	insert_into_template "$html_content" "$filename" "$output_file"
 
