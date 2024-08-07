@@ -63,8 +63,6 @@ I also took a shot at a a 3D First Person environment [here](static/3D.html).
 
 ## RPG Tools
 
-![](img/flask.svg)
-
 ![Tabletop RPG Runner](img/trpg.png)
 
 Ever since I was introduced to the world of D&D I've thought some aspects could be made less painful using a computer.
@@ -77,18 +75,17 @@ For now, it's just a fun project I play around with from time to time.
 
 I've recently started experimenting with creating a Character Sheet using the Dioxus framework, but don't have anything I can show off yet!
 
-[](https://github.com/spideyclick/Lynx-Program-Downloader)
+## spideyclick.net
 
+I've built plenty of static HTML sites in the past, but this one features a lot of my favorite web design techniques. I love the way CSS has evolved so that it's easy to respect light/dark mode, have a responsive but easy to read layout using Grid & FlexBox, separate themes using CSS variables. HTML itself has evolved in so many ways that a lot of the boilerplate classes I used to use can simply be replaced by using the appropriate elements.
 
-## lynx-program-downloader
+## Lynx Program Downloader
+
+[Source Code](https://github.com/spideyclick/Lynx-Program-Downloader)
 
 At my very first IT job, we needed a way to automatically update our software downloads. Things like CCleaner, MalwareBytes, Defraggler, etc.
 
-This program does just that using the scripting capabilities in the
-[Lynx terminal web browser](http://lynx.browser.org/).
-It goes through a list of programs in different categories and downloads
-each, one at a time, from sources such as majorgeeks.com or
-filehippo.com, although it can be made to work with just about any site.
+This program does just that using the scripting capabilities in the [Lynx terminal web browser](http://lynx.browser.org/). It goes through a list of programs in different categories and downloads each, one at a time, from sources such as majorgeeks.com or filehippo.com, although it can be made to work with just about any site.
 
 This is the first program I ever made publicly available on GitHub. I was able to get it reviewed by a couple programmers I knew at the time and I was so grateful for the recommendations they gave me!
 

@@ -29,6 +29,7 @@ for markdown_file in "$content_dir"/*.md; do
 	filename=$(basename -- "$markdown_file")
 	filename="${filename%.*}"
 
+	# WARNING: This could cause problems in the future if ampersands are used in HTML, CSS or HREF links.
 	html_content=$(pandoc "$markdown_file" | sed 's/&amp;/\\\\&/')
 	echo "$html_content"
 	output_file="$output_dir/$filename.html"
