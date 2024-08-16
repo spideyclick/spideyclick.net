@@ -13,3 +13,4 @@
 - [ ] Migrate Domain/DNS
 - [ ] Retire NY Server
 - [ ] Same for TRM Site
+- [ ] Consider using Comfortaa font! <https://fonts.google.com/specimen/Comfortaa?stroke=Sans+Serif&vfonly=true>
