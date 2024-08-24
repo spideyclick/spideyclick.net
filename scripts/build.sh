@@ -39,6 +39,10 @@ for markdown_file in "$content_dir"/*.md; do
 	cp -r css/ dist/
 	cp -r static/ dist/
 
+	# Favicon needs to be in dist root!
+	cp img/favicon.ico dist/
+
+
 	echo "Generated $output_file"
 done
 

@@ -86,8 +86,8 @@ li > a:hover {
 ### Software Discovery
 
 - [APK Downloader](http://apps.evozi.com/apk-downloader/)
-- NixOS Packages
-- Brew packages
+- [NixOS Packages](https://search.nixos.org/packages)
+- [Brew packages](https://formulae.brew.sh/)
 - [Chocolatey Gallery](https://chocolatey.org/about)
 - [AlternativeTo - Social Software Recommendations](http://alternativeto.net/)
 - [FossHub](http://www.fosshub.com/)
@@ -124,9 +124,10 @@ li > a:hover {
 
 ## Interesting Open Source Projects
 
+- [KDE/Plasma](https://kde.org/)
+- [Helix Editor](https://helix-editor.com/)
+- [Dioxus](https://dioxuslabs.com/)
 - [Inkscape Graphic Design](https://inkscape.org/)
 - [Krita Painting](https://krita.org/)
 - [LMMS Music](https://lmms.io/)
-- KDE/Plasma
-- Helix Editor
 
