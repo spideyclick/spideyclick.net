@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build Dist
-        run: ./scripts/build.sh
+        run: sudo apt install -y pandoc; ./scripts/build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
